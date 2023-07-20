@@ -1,0 +1,11 @@
+.barButton {
+    width: auto;
+    font-size: 15px;
+    font-weight: bold;
+    border:2px solid blueviolet;
+    border-radius: 10px;
+    padding:5px 10px 5px 5px;
+    
+    margin:5px;
+
+}

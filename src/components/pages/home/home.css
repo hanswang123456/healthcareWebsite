@@ -1,0 +1,177 @@
+.homeContainer{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.homeTitle{
+width: 1024px;
+font-size: 20px;
+}
+
+
+
+/*GREET BAR*/
+#greet{
+    vertical-align: center;
+    margin:auto 20px;
+  }
+  
+  #client-detail{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+  }
+  #client-detail>*{
+    margin:auto 10px;
+  }
+  
+  
+  /*GENERAL BODY SECTIONS*/
+  section {
+    width: 80%;
+    max-width: 2000px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  #right{
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    max-width: 100%;
+  }
+  
+  /*DIV STARTS HERE*/
+  .stats {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin:0px auto;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px lightgray;
+  }
+  
+  .top-nav{
+    border-top:5px solid var(--main-color);
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
+  }
+  
+  .right-nav{  border-left:5px solid var(--main-color);  
+    width: 250px;
+    height: 200px;
+  }
+  
+  #top-chart {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+  }
+  
+  #next-appointment-countdown {
+   font-size: 18px;
+   font-family: sans-serif;
+   font-weight: bolder;
+  
+  }
+  #next-appointment {
+    margin:10px auto;
+  }
+  
+  #appointment-count {
+    width: 500px;
+  }
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: white; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(170, 125, 211); 
+    border-radius:5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--main-color); 
+  }
+  
+  .icon{
+    color: var(--main-color);
+    height: 20px;
+    margin:auto 10px;
+  }
+  
+  .small-icon {
+    height: 12px;
+  }
+  
+  .rbc-toolbar > span > button {
+    background-color: var(--main-color);
+    color: white;
+  }
+  
+  button.rbc-active {
+    color: white;
+    background-color: black;
+  }
+  
+  .rbc-header {
+    background-color: var(--main-color-light);
+  }
+  
+  .rbc-active {
+    font-weight: bold;
+    background-color: black !important;
+    color: white;
+  }
+  
+  .rbc-active:hover {
+    font-weight: bold;
+    background-color: var(--main-color-light) !important;
+    color: black;
+  }
+  
+  .rbc-today {
+    background-color: whitesmoke !important;
+    box-shadow: 0px 0px 10px white !important;
+  }
+  
+  .rbc-day-bg {
+    background-color: var(--main-color-light);
+  }
+  
+  .rbc-off-range-bg {
+    background-color: var(--main-color) !important;
+    
+  }
+  
+  .rbc-off-range {
+    color: white !important;
+  }
+  
+  .rbc-event {
+    background-color: var(--main-color) !important;
+    color:white;
+  }
+  
+  .rbc-show-more {
+    color: var(--main-color) !important;
+  }
+  

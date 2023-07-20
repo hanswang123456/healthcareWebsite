@@ -1,0 +1,98 @@
+button {
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgb(157, 85, 225);
+    color: white;
+    border:none;
+    padding: 15px;
+    margin:10px 5px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+
+#head {
+    width: 100% ;
+    background: radial-gradient(ellipse 100% 100% at 20% 0,rgb(211, 190, 232) 100%, white 100%);
+    padding: 0px 0px 100px 0px;
+    margin-top:0px;
+}
+
+.bodySection {
+    width:80%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+
+.bodySection> div {
+        width: 46%;
+        margin:2%
+    }
+
+    .outerCutout1, .outerCutout2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            background-color: white;
+    }
+
+    .outerCutout1 {
+        -webkit-clip-path: polygon(0% 0%, 25% 0%, 0% 40%, 0% 0%);
+        clip-path: polygon(0% 0%, 25% 0%, 0% 40%, 0% 0%);
+    }
+
+    
+    .outerCutout2 {
+        -webkit-clip-path: polygon(100% 100%, 75% 100%, 100% 60%, 100% 100%);
+        clip-path: polygon(100% 100%, 75% 100%, 100% 60%, 100% 100%);
+    }
+
+#topImg {
+    width: 100%;
+    height: 90%;
+    margin: 10% auto 10%;
+
+    background-image: url("../../images/topImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#borderDesign{
+    position: relative;
+    height: 150%;
+    width: 220px;
+    border-radius: 30px;
+    border:5px solid black;
+    background-color: white;
+}
+
+#topNotch{
+    position: absolute;
+    width: 90px;
+    height: 12px;
+    top: 0%;
+    left:65px;
+    background-color: black;
+    border-radius: 0px 0px 10px 10px;
+
+}
+#rightNotch {
+    position: absolute;
+    width: 7px;
+    height: 60px;
+    top: 20%;
+    left:100%;
+    background-color: black;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#overlay {
+    height: 300px; 
+}

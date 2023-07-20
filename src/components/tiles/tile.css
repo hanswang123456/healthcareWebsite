@@ -1,0 +1,105 @@
+.hospitalTile{
+    width: 90%;
+    margin:10px 5%;
+    height:auto;
+    min-height: 50px;
+    color:black;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding:5px;
+}
+
+.hospitalTile > div {
+    margin:10px;
+}
+
+.hospitalTileLarge {
+    border-top:5px solid blueviolet;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    font-size: x-large;
+    text-align: center;
+    position: relative;
+}
+
+.tileTitle {
+    font-size: 16px;
+    margin: 5px auto;
+    font-weight: bold;
+}
+
+.tileInfo {font-size: 12px; padding: 5px;}
+
+.interactionButton {
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    vertical-align: center;
+    width: 90%;
+    margin: 2% 5%;
+    border: 2px solid blueviolet;
+    color:blueviolet;
+    padding:10px 0px;
+    font-weight: bold;
+}
+
+.interactionButton {
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    vertical-align: center;
+    width: 90%;
+    margin: 2% 5%;
+    border: 2px solid blueviolet;
+    color:blueviolet;
+    padding:10px 0px;
+    font-weight: bold;
+}
+
+.interactionButtonBox {
+    position: absolute;
+    bottom: 5px;
+    font-size: 12px;
+    border-radius: 10px;
+    vertical-align: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.interactionButtonPair  {
+    font-size: 12px;
+    border-radius: 10px;
+    vertical-align: center;
+    width: 90%;
+    margin: 2% 5%;
+    border: 2px solid blueviolet;
+    color:blueviolet;
+    padding:2px 0px;
+    font-weight: bold;
+}
+
+.interactionButton:hover, .interactionButtonPair:hover, .doctorTime:hover {
+    border: 2px solid blueviolet;
+    color:white;
+    background-color: blueviolet;
+}
+
+.interactionButton:hover > *, .interactionButtonPair:hover>* , .doctorTime:hover>*{
+    color: white;
+}
+
+.doctorTime {
+    width: 90%;
+    font-size: 12px;
+    font-weight: bold;
+    border:2px solid blueviolet;
+    border-radius: 10px;
+    padding:5px;
+    margin:5px auto
+
+}

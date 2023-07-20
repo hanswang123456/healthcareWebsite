@@ -1,0 +1,47 @@
+
+
+.login {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#top-bar{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.lContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lInput{
+  height: 30px;
+  padding: 10px;
+  margin: 0px auto;
+  padding: 0px 10px;
+}
+
+.lButton {
+  border: none;
+  padding: 10px 20px;
+  background-color: #202126;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px auto;
+}
+
+.lButton:disabled{
+  background-color: #080808;
+  cursor: not-allowed;
+}
