@@ -24,7 +24,7 @@ const Body = () => {
   //useStates
   const [loadHospital, setLoadHospital] = useState(true);
   const [hospitalData, setHospitalData] = useState();
-  const [user, setUser] = useState(JSON.parse(sessionStorage.getItem("user")));
+  const [user] = useState(JSON.parse(sessionStorage.getItem("user")));
   const dateToday = new Date();
 
   useEffect(() => {
@@ -135,7 +135,7 @@ const Body = () => {
         }
 
         for (let i = 0; i < holderDoc.length; i++) {
-          if (user.details.doctors[i].name == d.doctor) {
+          if (user.details.doctors[i].name === d.doctor) {
             if (holderDoc[i].hasOwnProperty(day)) {
               holderDoc[i][day] = holderDoc[i][day] + 1;
             } else {
@@ -146,7 +146,7 @@ const Body = () => {
             if (
               // doctor doesnt have appointment on that day (set 0)
               !holderDoc[i].hasOwnProperty(day) &&
-              user.details.doctors[i].name != d.doctor
+              user.details.doctors[i].name !== d.doctor
             ) {
               holderDoc[i][day] = 0;
             }
@@ -159,12 +159,12 @@ const Body = () => {
 
     var yDocAr = [];
 
-    for (var prop in holder) {
-      xAr.push(new Date(prop));
+    for (var p in holder) {
+      xAr.push(new Date(p));
     }
 
-    for (var prop in holder) {
-      yAr.push(holder[prop]);
+    for (var q in holder) {
+      yAr.push(holder[q]);
     }
 
     for (let i = 0; i < holderDoc.length; i++) {
