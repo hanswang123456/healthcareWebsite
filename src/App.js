@@ -12,8 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {sessionStorage.getItem("user") != null &&
-        sessionStorage.getItem("user") != "null" ? (
+        {sessionStorage.getItem("user") !== null &&
+        sessionStorage.getItem("user") !== "null" ? (
           <Route path="/" element={<Home />} />
         ) : (
           <Route path="/" element={<Intro />} />
