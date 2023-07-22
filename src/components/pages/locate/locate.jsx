@@ -17,7 +17,7 @@ const Locate = () => {
       <Header />
       <section>
         {" "}
-        <div style={{ margin: "0px 10px", width: "100%" }}>
+        <div style={{ margin: "0px 30px", width: "100%" }}>
           {" "}
           <h2>Facility Locator</h2>
         </div>

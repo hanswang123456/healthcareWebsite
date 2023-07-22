@@ -13,7 +13,11 @@ import DoctorTile from "./tiles/doctorTile";
 //import ReactEcharts from "echarts-for-react";
 import EChartsReact from "echarts-for-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendarDay } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendarDay,
+  faClockFour,
+  faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 const Body = () => {
   const localizer = momentLocalizer(moment);
 
@@ -279,6 +283,7 @@ const Body = () => {
           <div className="stats top-nav" id="appointment-map-route">
             <h3>Next Appointment</h3>
             <div>
+              <FontAwesomeIcon icon={faClockFour} className="icon" />
               {user ? (
                 user.details.appointment.filter(
                   (x) => new Date(x.time) > new Date()
@@ -293,6 +298,7 @@ const Body = () => {
                       )}
                     </div>
                     <div id="next-appointment">
+                      <FontAwesomeIcon icon={faCalendarDay} className="icon" />
                       {user.details.appointment
                         .filter((x) => new Date(x.time) > new Date())[0]
                         .time.split("T")
@@ -313,6 +319,10 @@ const Body = () => {
                         )[0].doctor}
                     </div>
                     <div id="next-appointment-location">
+                      <FontAwesomeIcon
+                        icon={faLocationArrow}
+                        className="icon"
+                      />
                       {
                         user.details.appointment.filter(
                           (x) => new Date(x.time) > new Date()
