@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { faRobot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MailList from "../../mailList/MailList";
 import Footer from "../../footer/Footer";
 const Intro = () => {
   return (
@@ -146,11 +147,13 @@ const Intro = () => {
         <div>
           <div>
             <h2>Providing Valuable Knowledge</h2>
-            The app features a comprehensive knowledge base of diets, exercises,
-            and post-cancer practices. It is curated by Integrative Medicine
-            experts, whose goal is to let one live a safe and enjoyable life.
-            For instance, a user can search for the information on
-            cancer-related risks and benefits of a certain food product.
+            The app features a comprehensive knowledge base of diseases,
+            exercises, and self-treatment practices. It is curated by from higly
+            reputable sources including CDC sites, Federal Health information,
+            and the US National Library of Medicine, whose goal is to let one
+            live a safe and enjoyable life. For instance, a user can search for
+            the information on back related injuries or get up to date
+            information on COVID-19 policies.
           </div>
           <div className="backNum">1</div>
         </div>
@@ -323,10 +326,11 @@ const Intro = () => {
           <div>
             <h2>Providing Urgent Help</h2>
             If there is a question that requires urgent help of a doctor, the
-            app enables a user to consult with an online oncologist 24/7.
-            Surely, it cannot substitute actual medical help in emergency cases.
-            While the app does not offer a diagnosis or medical prescriptions,
-            it is a perfect solution for informational purposes.
+            app enables a user to consult with an online medical personnel 24/7.
+            Surely, it cannot substitute actual medical help in emergency cases
+            but the app connect users to informaiton and resources for their
+            well being. While the app does not offer a diagnosis or medical
+            prescriptions, it is a perfect solution for informational purposes.
           </div>
           <div className="backNum">3</div>
         </div>
@@ -346,6 +350,7 @@ const Intro = () => {
           </div>
         </div>
       </section>
+      <MailList />
       <Footer />
     </div>
   );

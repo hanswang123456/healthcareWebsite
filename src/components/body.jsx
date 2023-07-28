@@ -9,6 +9,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 import { useState } from "react";
 import HospitalTile from "./tiles/hospitalTile";
 import DoctorTile from "./tiles/doctorTile";
+//import "chart.js"
 
 //import ReactEcharts from "echarts-for-react";
 import EChartsReact from "echarts-for-react";
@@ -212,37 +213,18 @@ const Body = () => {
         bottom: "3%",
         containLabel: true,
       },
-      xAxis: [
-        {
-          type: "category",
-          boundaryGap: false,
-          data: xAr,
-        },
-      ],
-      yAxis: [
-        {
-          type: "value",
-        },
-      ],
+      xAxis: {
+        type: "category",
+        boundaryGap: false,
+        data: xAr,
+      },
+
+      yAxis: {
+        type: "value",
+      },
+
       series: yDocAr,
       color: ["#9F2B68", "blueviolet", "#301934", "#5D3FD3", "black"],
-
-      // [
-      //   {
-      //     name: "Visits",
-      //     type: "line",
-      //     stack: "Total",
-      //     label: {
-      //       show: true,
-      //       position: "top",
-      //     },
-      //     areaStyle: {},
-      //     emphasis: {
-      //       focus: "series",
-      //     },
-      //     data: yAr,
-      //   },
-      // ].concat(yDocAr)
     };
 
     return appointmentOption;
@@ -349,7 +331,7 @@ const Body = () => {
         <div>
           {" "}
           <div className="stats top-nav" id="appointment-count">
-            <h3>Visits</h3>
+            <h3>Doctor Appointment Frequency Chart {"Running Daily Total"}</h3>
             {user ? <EChartsReact option={getAppOptions()} /> : "Please Log In"}
           </div>
         </div>{" "}
